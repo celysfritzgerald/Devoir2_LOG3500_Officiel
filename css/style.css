@@ -14,6 +14,10 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+p{
+    font-size: 15px;
+    font-style: bold;
+}
 body {
     background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
     background-size: cover;
@@ -44,7 +48,7 @@ header {
 .logo {
     font-size: 1.35rem;
     font-weight: 700;
-    color: #2563eb;
+    color: #3d4d6e;
     text-align: center;
 }
 
@@ -272,7 +276,7 @@ footer {
 }
 
 /* Adaptabilité Responsive (Smartphones) */
-@media (min-width: 580px) {
+@media (min-width: 640px) {
     .card-body {
         flex-direction: row;
         justify-content: space-between;
