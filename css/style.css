@@ -16,7 +16,6 @@ body {
 }
 p{
     font-size: 15px;
-    font-style: bold;
 }
 body {
     background-image: url("https://images.unsplash.com/photo-1506744038136-46273834b3fb");
@@ -74,7 +73,7 @@ main {
 }
 
 .search-section p {
-    color: #64748b;
+    color: #0d0d0e;
     margin-bottom: 1.5rem;
 }
 
@@ -161,7 +160,8 @@ button[type="submit"]:hover {
     align-items: center;
     gap: 1rem;
     margin: 2rem 0;
-    color: #64748b;
+    color: #05ebeb;
+    font-size: 15px;
 }
 
 .spinner {
