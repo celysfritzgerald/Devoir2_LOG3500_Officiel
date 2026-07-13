@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard - Station Météo Dynamique</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">🌤️ Weather Dashboard</div>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h1>Consultez la Météo en Temps Réel</h1>
+            <p>Saisissez le nom d'une ville pour obtenir instantanément ses conditions atmosphériques actuelles.</p>
+            
+            <form id="search-form" novalidate>
+                <div class="search-group">
+                    <label for="city-input" class="visually-hidden">Rechercher une ville</label>
+                    <input 
+                        type="text" 
+                        id="city-input" 
+                        placeholder="Ex: Aquin, Port-au-Prince, Cayes, Paris..."
+                        autocomplete="off"
+                    >
+                    <button type="submit">Rechercher</button>
+                </div>
+                <div id="error-message" class="error-text" role="alert"></div>
+            </form>
+        </section>
+
+        <section class="result-section">
+            <div id="loader" class="loader hidden">
+                <div class="spinner"></div>
+                <p>Récupération des données atmosphériques...</p>
+            </div>
+
+            <div id="result-card" class="weather-card hidden">
+                <div class="card-header">
+                    <h2 id="weather-location"></h2>
+                    <p class="subtitle">Conditions actuelles</p>
+                </div>
+                
+                <div class="card-body">
+                    <div class="temp-container">
+                        <span id="weather-temp" class="temp-value"></span>
+                    </div>
+                    
+                    <div class="details-container">
+                        <div class="detail-item">
+                            <span class="icon">☁️</span>
+                            <span class="label">Statut :</span>
+                            <span id="weather-status" class="value"></span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="icon">💨</span>
+                            <span class="label">Vent :</span>
+                            <span id="weather-wind" class="value"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="api-status-message" class="api-status hidden" role="alert"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 ISTEAH - LOG3500 Conception et programmation de sites Web I. Tous droits réservés.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
